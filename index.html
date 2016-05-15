@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>中国移动知识管理系统</title>
+    <link rel="stylesheet" href="css/core.css">
+    <script type="text/javascript" src='js/jquery-1.12.3.min.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- logo及搜索 -->
+        <div class="header">
+            <div class="content">
+                <div class="logo f-fl">
+                    <a href="/"></a>
+                </div>
+                <div class="search f-fr">
+                    <p class="search-category">
+                        <a href="" class='active'>全部</a
+                        ><a href="">DOC</a
+                        ><a href="">PPT</a
+                        ><a href="">TXT</a
+                        ><a href="">PDF</a
+                        ><a href="">XLS</a>
+                    </p>
+                    <form action="" class="search-form f-fl">
+                        <input type="text" class="search-input f-fl" id="search-input" autocomplete="off">
+                        <input type="submit" class="search-btn f-fl f-csp" id="search-btn" value="">
+                    </form>
+                    <a href="" class="advanced-search">高级搜索</a>
+                </div>
+            </div>
+            <hr class="hr-left f-fl">
+            <hr class="hr-right">
+        </div>
+        <!-- /logo及搜索 -->
+        <!-- 页面主体 -->
+        <div class="main">
+            <!-- 公共资源 -->
+            <div class="public f-cb">
+                <!-- 个人登录信息 -->
+                <div class="public-left f-fl">
+                    <fieldset class="userinfo">
+                        <legend>&nbsp;&nbsp;登录信息&nbsp;&nbsp;</legend>
+                        <div class="user-introduce">
+                            <img src="images/people.png" alt="">
+                            <p class="name">关 玢</p>
+                            <p class="section">综合管理室</p>
+                        </div>
+                        <div class="user-doc f-cb">
+                            <div class="collect item">
+                                <a class="number" href="">12</a>
+                                <p class="sort">收藏</p>
+                            </div>
+                            <div class="document item">
+                                <a class="number" href="">36</a>
+                                <p class="sort">文档</p>
+                            </div>
+                            <div class="download item">
+                                <a class="number" href="">125</a>
+                                <p class="sort">下载</p>
+                            </div>
+                        </div>
+                        <div class="recent-doc">
+                            <li class="item-recent"><a href="" class="title">仓库各作业流程图</a><span><i>5</i>页</span></li>
+                            <li class="item-recent"><a href="" class="title">仓储管理全套课件</a><span><i>306</i>页</span></li>
+                            <li class="item-recent"><a href="" class="title">仓库各作业流程图</a><span><i>5</i>页</span></li>
+                            <li class="item-recent"><a href="" class="title">仓储管理全套课件</a><span><i>306</i>页</span></li>
+                        </div>
+                        <a href="" class="personal-center">进入个人中心</a>
+                    </fieldset>
+                </div>
+                <!-- /个人登录信息-->
+                <!-- 公共资源右侧 -->
+                <div class="public-right f-fl">
+                    <div class="f-cb">
+                    	<!-- 资源切换 -->
+                        <div class="resource f-fl">
+                            <ul class="resource-title">
+                                <li class="public-knowledge title-item"><a def="#tab0">公共知识</a></li><!-- def为自定义属性,用来寻找对应的tab内容 -->
+                                <li class="contribution-rank title-item"><a def="#tab1">贡献排行</a></li>
+                                <li class="hot-resource title-item active"><a def="#tab2">热门资源</a></li>
+                            </ul>
+                            <div class="resource-content">
+                                <div class="hr-9"></div>
+                                <ul id="tab0" class="tab-item public-knowledge-cont" style="display: none;">
+                                    <li class="article f-cb">
+                                        <img src="images/excel.png" alt="">
+                                        <div class="text">
+                                            <a href="" class="article-title">绩效薪酬2016-01月份统计</a>
+                                            <p class="article-info"><span class="article-author">黄诗文</span><span class="article-date">2016-03-18</span></p>
+                                        </div>
+                                        <div class="download f-fr">
+                                            <input type="button" class="download-btn" value='下载'>
+                                            <span class="download-num">252</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab1" class="tab-item contribution-rank-cont" style="display: none;">
+                                    <li class="article f-cb">
+                                        <img src="images/word.png" alt="">
+                                        <div class="text">
+                                            <a href="" class="article-title">BOMC系统产品介绍</a>
+                                            <p class="article-info"><span class="article-author">黄诗文</span><span class="article-date">2016-03-18</span></p>
+                                        </div>
+                                        <div class="download f-fr">
+                                            <input type="button" class="download-btn" value='下载'>
+                                            <span class="download-num">252</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul id="tab2" class="tab-item hot-resource-cont">
+                                    <li class="article f-cb">
+                                        <img src="images/excel.png" alt="">
+                                        <div class="text">
+                                            <a href="" class="article-title">绩效薪酬2016-01月份统计</a>
+                                            <p class="article-info"><span class="article-author">黄诗文</span><span class="article-date">2016-03-18</span></p>
+                                        </div>
+                                        <div class="download f-fr">
+                                            <input type="button" class="download-btn" value='下载'>
+                                            <span class="download-num">252</span>
+                                        </div>
+                                    </li>
+                                    <li class="article f-cb">
+                                        <img src="images/word.png" alt="">
+                                        <div class="text">
+                                            <a href="" class="article-title">BOMC系统产品介绍</a>
+                                            <p class="article-info"><span class="article-author">黄诗文</span><span class="article-date">2016-03-18</span></p>
+                                        </div>
+                                        <div class="download f-fr">
+                                            <input type="button" class="download-btn" value='下载'>
+                                            <span class="download-num">252</span>
+                                        </div>
+                                    </li>
+                                    <li class="article f-cb">
+                                        <img src="images/excel.png" alt="">
+                                        <div class="text">
+                                            <a href="" class="article-title">2015工作总结</a>
+                                            <p class="article-info"><span class="article-author">黄诗文</span><span class="article-date">2016-03-18</span></p>
+                                        </div>
+                                        <div class="download f-fr">
+                                            <input type="button" class="download-btn" value='下载'>
+                                            <span class="download-num">252</span>
+                                        </div>
+                                    </li>
+                                    <li class="article f-cb article-last">
+                                        <img src="images/ppt.png" alt="">
+                                        <div class="text">
+                                            <a href="" class="article-title">绩效薪酬2016-01月份统计</a>
+                                            <p class="article-info"><span class="article-author">黄诗文</span><span class="article-date">2016-03-18</span></p>
+                                        </div>
+                                        <div class="download f-fr">
+                                            <input type="button" class="download-btn" value='下载'>
+                                            <span class="download-num">252</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /资源切换 -->
+                        <!-- 热搜文档 -->
+                        <div class="hot-search-document f-fr">
+                            <h3>热搜文档</h3>
+                            <ol class="doc-list">
+                                <li class="item f-cb"><i>1.</i><a href="" class="doc">合理化建议流程说明</a><span class="name">马申玉</span><span class="number">125</span></li>
+                                <li class="item f-cb"><i>2.</i><a href="" class="doc">绩效薪酬管理制度</a><span class="name">王海明</span><span class="number">110</span></li>
+                                <li class="item f-cb"><i>3.</i><a href="" class="doc">BOMC监控地市能力报告</a><span class="name">王峰</span><span class="number">85</span></li>
+                                <li class="item f-cb"><i>4.</i><a href="" class="doc">作业计划</a><span class="name">韩宏斌</span><span class="number number-orange">65</span></li>
+                                <li class="item f-cb"><i>5.</i><a href="" class="doc">工作总结</a><span class="name">单单</span><span class="number number-orange">54</span></li>
+                                <li class="item f-cb"><i>6.</i><a href="" class="doc">BOMC监控地市能力报告</a><span class="name">王海明</span><span class="number number-orange">35</span></li>
+                                <li class="item f-cb"><i>7.</i><a href="" class="doc">作业计划</a><span class="name">王峰</span><span class="number number-orange">25</span></li>
+                                <li class="item f-cb"><i>8.</i><a href="" class="doc">工作总结</a><span class="name">韩宏斌</span><span class="number number-orange">15</span></li>
+                            </ol>
+                        </div>
+                        <!-- ／热搜文档 -->
+                    </div>
+                    <!-- 科室动态 -->
+                    <div class="section-info f-cb">
+                        <h3>科室动态</h3>
+                        <div class="wrapper f-cb">
+                            <ul class="section-doc section-doc-0 f-fl">
+                                <li class="item f-cb"><a href="" class="doc">技术指标</a><span class="name">周书梅</span><span class="date">2015-8-25</span></li>
+                                <li class="item f-cb"><a href="" class="doc">BOMC系统产品介绍</a><span class="name">孙岚岚</span><span class="date">2015-9-13</span></li>
+                                <li class="item f-cb"><a href="" class="doc">移动集团总公司发文表彰2015年先进工作集体</a><span class="name">刘冬岩</span><span class="date">2015-10-14</span></li>
+                                <li class="item f-cb"><a href="" class="doc">绩效薪酬201601月份统计</a><span class="name">黄诗文</span><span class="date">2015-11-27</span></li>
+                                <li class="item f-cb"><a href="" class="doc">服务开通SACP指令</a><span class="name">赵铮</span><span class="date">2016-1-19</span></li>
+                            </ul>
+                            <ul class="section-doc section-doc-1 f-fl">
+                                <li class="item f-cb"><a href="" class="doc">技术指标</a><span class="name">周书梅</span><span class="date">2015-8-25</span></li>
+                                <li class="item f-cb"><a href="" class="doc">BOMC系统产品介绍</a><span class="name">孙岚岚</span><span class="date">2015-9-13</span></li>
+                                <li class="item f-cb"><a href="" class="doc">移动集团总公司发文表彰2015年先进工作集体</a><span class="name">刘冬岩</span><span class="date">2015-10-14</span></li>
+                                <li class="item f-cb"><a href="" class="doc">绩效薪酬201601月份统计</a><span class="name">黄诗文</span><span class="date">2015-11-27</span></li>
+                                <li class="item f-cb"><a href="" class="doc">服务开通SACP指令</a><span class="name">赵铮</span><span class="date">2016-1-19</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /科室动态 -->
+                </div>
+                <!-- /公共资源右侧 -->
+            </div>
+            <!-- /公共资源 -->
+            <!-- 分类知识 -->
+            <div class="classification">
+                <h3 class="title">知识分类树</h3>
+                <div class="wrapper f-cb">
+                    <!-- 分类知识左侧 -->
+                    <div class="classification-left f-fl">
+                        <a class="select">运行维护室</a>
+                        <ul class="section-item" style="display:none;">
+                            <li>运行维护室</li>
+                            <li>研发室</li>
+                            <li>产品室</li>
+                            <li>财务室</li>
+                        </ul>
+                        <div class="tree">
+                            <ul>
+                                <li>
+                                    <span><i class="icon-folder-open" id="tree-root"></i>知识库</span>
+                                    <ul>
+                                        <li>
+                                            <span><i class="icon-minus-sign"></i>作业计划</span>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="icon-leaf"></i>计划一</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span><i class="icon-minus-sign"></i>出账管理</span>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="icon-leaf"></i>管理一</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span><i class="icon-minus-sign"></i>其他工作</span>
+                                            <ul>
+                                                <li>
+                                                    <span><i class="icon-leaf"></i>班组管理</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="icon-leaf"></i>系统优化</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="icon-leaf"></i>技术服务</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /分类知识左侧 -->
+                    <!-- 分类知识右侧 -->
+                    <div class="classification-right f-fr">
+                    	<!-- 文档列表 -->
+                        <div class="doc-table">
+                            <p class="th"><span class="title">名称</span><span class="name">创建人</span><span class="source">来源</span><span class="date">创建日期</span></p>
+                            <ul class="content f-cb">
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/pdf_little.png" alt=""><a class="text">技术指标</a></div><span class="name">周书梅</span><span class="source">文档</span><span class="date">2015-8-25</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/ppt_little.png" alt=""><a class="text">BOMC系统产品介绍</a></div><span class="name">孙岚岚</span><span class="source">培训</span><span class="date">2015-9-13</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/word_little.png" alt=""><a class="text">移动集团总公司发文表彰2015先进工作集体</a></div><span class="name">刘冬岩</span><span class="source">集团</span><span class="date">2015-10-14</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/excel_little.png" alt=""><a class="text">绩效薪酬201601月份统计</a></div><span class="name">黄诗文</span><span class="source">日常维护</span><span class="date">2015-8-25</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/ppt_little.png" alt=""><a class="text">服务开通SACP指令</a></div><span class="name">赵铮</span><span class="source">日常维护</span><span class="date">2015-11-27</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/ppt_little.png" alt=""><a class="text">2015年终工作总结</a></div><span class="name">韩宏斌</span><span class="source">培训</span><span class="date">2016-1-25</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/word_little.png" alt=""><a class="text">2016年工作计划</a></div><span class="name">韩宏斌</span><span class="source">集团</span><span class="date">2015-9-13</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/ppt_little.png" alt=""><a class="text">2017年工作计划</a></div><span class="name">韩宏斌</span><span class="source">日常维护</span><span class="date">2015-10-14</span></li>
+                                <li class="tr f-cb">
+                                    <div class="title"><img src="images/word_little.png" alt=""><a class="text">2018年工作计划</a></div><span class="name">韩宏斌</span><span class="source">日常维护</span><span class="date">2015-11-27</span></li>
+                            </ul>
+                        </div>
+                        <!-- /文档列表 -->
+                        <!-- 分页 -->
+                        <div class="doc-pagination">
+                            <a class="prev"><上一页</a
+                            ><a class="num">1</a
+                        	><a class="num">2</a
+                        	><a class="num">3</a
+                        	><a class="num">4</a
+                        	><a class="num active">5</a
+                        	><a class="num">6</a
+                        	><a class="num">7</a
+                        	><a class="num">8</a
+                        	><a class="num">9</a
+                        	><a class="num">10</a
+                        	><a class="next">下一页></a
+                        	><a class="last">尾页</a>
+                        </div>
+                        <!-- /分页 -->
+                    </div>
+                    <!-- /分类知识右侧 -->
+                </div>
+            </div>
+            <!-- /分类知识 -->
+        </div>
+        <!-- /页面主体 -->
+        <!-- 页脚 -->
+        <div class="footer">中国移动通信&nbsp;&nbsp;&nbsp;辽宁移动通信</div>
+        <!-- /页脚 -->
+    </div>
+    <script src="js/core.js"></script>
+</body>
+
+</html>
