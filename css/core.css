@@ -138,10 +138,10 @@ a{color:#333;}
 .classification{margin-left: 77px;margin-right: 86px;}
 .classification h3{font-size: 16px;font-weight: normal;color: #0084d5;margin: 0 auto 10px 41px;}
 .classification .wrapper{position: relative;width: 100%;border-top:4px solid #c5daea;}
-.classification .classification-left{width: 206px;height:388px;border: 2px solid #c5daea;margin-top: -4px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;}
+.classification .classification-left{width: 206px;height:388px;border:2px solid #c5daea;border-top: 4px solid #98bad7;margin-top: -4px;border-bottom-left-radius: 9px;border-bottom-right-radius: 9px;behavior:url(../javascript/PIE.htc);}
 /*科室选择*/
 .classification .select{display: block;width: 190px;height: 29px;line-height: 29px;margin:24px auto 0px;text-indent:14px;font-size:16px;color:#fff;background:#98bad7 url(../images/triangle.png) 165px center no-repeat;border-radius: 5px;behavior:url(../javascript/PIE.htc);}
-.classification .section-item{position: absolute;top: 58px;left: 10px;z-index: 1;behavior:url(../javascript/PIE.htc);}
+.classification .section-item{position: absolute;top: 58px;left: 10px;z-index: 1;}
 .classification .section-item li{width: 190px;height: 29px;line-height: 29px; text-indent:14px;font-size:16px;color:#fff;background:#98bad7;border-top:1px solid #fff;cursor: pointer;}
 /*科室列表树*/
 .tree{margin-left: -22px;}
