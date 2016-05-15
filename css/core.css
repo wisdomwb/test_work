@@ -100,7 +100,7 @@ a{color:#333;}
 .public-right .resource{margin-top: 22px;width: 472px;}
 .public-right .resource-title{padding-left: 4px;font-size: 0;}	
 .resource-title .title-item{display: inline-block;padding-bottom: 7px;font-size: 15px;color: #555353;}
-.resource-title .title-item:hover a,.resource-title .active a{color: #3b89f3;font-weight: bold;}
+.resource-title .active a{color: #3b89f3;font-weight: bold;}
 .resource-title .active{border-bottom: 4px solid #7ba6ca;}
 .resource-title .contribution-rank{margin-left: 30px;margin-right: 30px;}
 .resource .resource-content{border-top: 4px solid #c5daea;margin-top: -4px;}
