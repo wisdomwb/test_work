@@ -162,7 +162,7 @@ a{color:#333;}
 /*分类知识右侧列表*/
 .classification-right{padding-top: 24px;padding-bottom: 67px;}
 .doc-table{margin-bottom: 17px;}
-.doc-table .th .title,.doc-table .th .name,.doc-table .th .source,.doc-table .th .date{background-color: #e3edf5;}
+/*.doc-table .th .title,.doc-table .th .name,.doc-table .th .source,.doc-table .th .date{background-color: #e3edf5;}
 .doc-table .th .title{border-top-left-radius: 5px;border-bottom-left-radius: 5px;behavior:url(../javascript/PIE.htc);}
 .doc-table .th .date{border-top-right-radius: 5px;border-bottom-right-radius: 5px;behavior:url(../javascript/PIE.htc);}
 .doc-table .th,.doc-table .tr{line-height: 32px;}
@@ -171,21 +171,12 @@ a{color:#333;}
 .doc-table .name{float: left;width: 100px;margin-right: 1px;text-indent: 24px;}
 .doc-table .source{float: left;width: 119px;margin-right: 1px;text-indent: 27px;}
 .doc-table .date{float: left;width: 117px;text-indent: 34px;}
-.doc-table img{margin-right: 17px;vertical-align: sub;}
-/*使用表格*/
-/*.doc-table{border-collapse: collapse;}
-.doc-table th,.doc-table td{border-left:1px solid #fff;border-right: 1px solid #fff;}
-.doc-table thead tr th{background-color: #e3edf5;}
-.doc-table tr{height: 32px;line-height: 32px;}
-.doc-table thead tr>th:nth-child(1){width: 441px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;text-indent: 18px;}
-.doc-table thead tr>th:nth-child(2),.doc-table tbody tr>td:nth-child(2){width: 100px;text-indent: 24px;}
-.doc-table thead tr>th:nth-child(3),.doc-table tbody tr>td:nth-child(2){width: 119px;text-indent: 27px;}
-.doc-table thead tr>th:nth-child(4){width: 116px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;text-indent: 34px;}
-.doc-table tbody tr>td:nth-child(1){text-indent: 18px;}
-.doc-table tbody tr>td:nth-child(4){text-indent: 34px;}
-.doc-table img{vertical-align: middle;padding-right: 17px;}
-.doc-table tr>td:nth-child(2),.doc-table tr>td:nth-child(3),.doc-table tr>td:last-child{color: #999;}*/
-
+.doc-table img{margin-right: 17px;vertical-align: sub;}*/
+tr{height: 32px;line-height: 32px;}
+tr>th:first-child,tr>td:first-child{width: 441px;}
+tr>th:nth-child(2),tr>td:nth-child(2){width: 100px;}
+tr>th:nth-child(3),tr>td:nth-child(3){width: 119px;}
+tr>th:last-child,tr>td:last-child{width: 117px;}
 /*分页*/
 .doc-pagination{margin-left: 50px;}
 .doc-pagination a{display: inline-block;line-height: 27px;border:1px solid #e7ecf0;margin-left: 5px;text-align: center;}
